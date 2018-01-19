@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>联网报警</title>
+	<link rel="stylesheet" type="text/css" href="./index.css">
+	
+</head>
+<body>
+<!--//声光报警-->
+<audio controls id="audioMusic" hidden>
+    <source src="../resource/music/beep.ogg" type="audio/ogg">
+</audio>
+
+	<div id="titleTop" class="titleTop">
+		<div id="labelLeft" class="labelLeft"></div>
+		<div id="labelCenter" class="labelCenter">
+			<div class="line-title"></div>
+			<div id="rdPolice" class="labelCenterItem">
+				<div class="receivePoliceLabel">	
+				</div>
+				<div class="receivePoliceText">实时处警</div>
+			</div>
+			<div class="line-title" id="allManagerline"></div>
+			<div id="allManager" class="labelCenterItem">
+				<div class="allManagerLabel"></div>
+				<div class="allManagerText">综合查询</div>
+			</div>
+		</div>
+
+		<div id="exit" class="exit">
+			<div id="exitLabel" class="exitLabel"></div>
+		</div>
+		<div id="pwdUpData" class="labelRight">
+			<div id="pwdLabel" class="pwdLabel"></div>
+			<div id="pwdText" class="pwdText">修改密码</div>
+		</div>
+		<div id="labelRight" class="labelRight">
+			<div id="userLabel" class="userLabel"></div>
+			<div id="userText" class="userText"></div>
+		</div>
+		<div id="labelAlert" class="labelAlert isAlert">
+		</div>
+
+	</div>
+	<div id="content" class="content">
+		<iframe id="iframeRdPolice" name="iframeRdPolice" src="" class="iframeRdPolice" frameborder="no" border="0">
+		</iframe>
+		<iframe id="iframeAllManager" name="iframeAllManager" src="" class="iframeAllManager" frameborder="no" border="0">
+		</iframe>
+		<iframe id="iframepwdUpData" name="iframepwdUpData" src="" class="iframepwdUpData" frameborder="no" border="0">
+		</iframe>
+	</div>
+</body>
+<script type="text/javascript" src="../resource/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../resource/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../resource/js/popups.js"></script>
+<script type="text/javascript" src="../resource/js/jquery-ajax-expand.js"></script>
+<script type="text/javascript" src="../tool/Heartbeat.js"></script>
+<script type="text/javascript" src="../resource/js/resize.js"></script>
+<script type="text/javascript" src="../resource/js/alert-OkorCancel.js"></script>
+<script type="text/javascript" src="../resource/js/alert-Sure.js"></script>
+<script type="text/javascript" src="../resource/js/checkUser.js"></script>
+<script type="text/javascript" src="./index.js"></script>
+<script type="text/javascript" src="./otherPopup.js"></script>
+</html>

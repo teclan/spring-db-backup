@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>源源不断的消息(登录版本)</title>
+<style>
+body, div, ul, li{
+	margin: 0;
+	padding: 0;
+}
+.nav{
+	float: left;
+	height: 40px;
+}
+.btn{
+	width: 150px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	border: 1px solid #0463F1;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.btn:hover, .btn:active{
+	color: #fff;
+	background: #0463F1;
+}
+.nav .btn{
+	float: left;
+	margin: 7px 2px;
+}
+.nav input{
+	float: left;
+	width: 200px;
+	height: 20px;
+	margin: 7px;
+	padding: 2px;
+	border: 1px solid #0463F1;
+}
+.main{
+	float: left;
+	clear: both;
+}
+.divClass{
+	float: left;
+	width: 500px;
+	height: 600px;
+	margin: 10px;
+	padding:5px;
+	background:#F7F7F7;
+	border: 1px solid #0463F1;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.divClass ul{
+	float: left;
+	margin: 5px;
+}
+
+.divClass ul li{
+	line-height: 20px;
+	list-style: none;
+}
+.chat-tip{
+	float: left;
+	width: 390px;
+	height: 20px;
+	margin-right: 5px;
+	font-weight: bold;
+}
+.chat-Info{
+	float: left;
+	width: 380px;
+	margin-left: 10px;
+	line-height: 20px;
+}
+#extraShow{
+	margin: 5px 5px 5px 15px;
+}
+#extraShow li{
+	list-style: square;
+}
+
+</style>
+<script type="text/javascript" src="jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="testDemo.js"></script>
+</head>
+
+<body>
+<div class="nav">
+	<input id="userName" type="text" />
+	<span class="btn" onclick="loginFun()">login-tester</span>
+	<span class="btn" onclick="ClearFun('messageShow')">Refresh-left</span>
+	<span class="btn" onclick="ClearFun('extraShow')">Refresh-right</span>
+	<span class="btn" onclick="ResetCount()">login-out</span>
+</div>
+<div class="main">
+<div class="divClass">
+	<ul id="messageShow"></ul>
+</div>
+<div class="divClass">
+	<ul id="extraShow"></ul>
+</div>
+</div>
+
+</body>
+</html>
